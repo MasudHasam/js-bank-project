@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>welcome to main bank account</title>
+    <!-- tailwind cdn -->
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body>
+    <main>
+        <!-- balance counting area -->
+        <section>
+            <h1 class="text-3xl font-bold text-center mt-4">let's get some <span
+                    class="font-extrabold text-indigo-700">Money</span></h1>
+            <div class="grid grid-cols-3 gap-4 w-9/12 mx-auto mt-12 text-amber-700">
+                <div class="bg-cyan-200 px-6 py-6 rounded-md">
+                    <h1 class="text-3xl">Deposit</h1>
+                    <p class="text-4xl font-semibold">$ <span id="currentDepoBalance">00</span></p>
+                </div>
+                <div class="bg-blue-200 px-6 py-6 rounded-md">
+                    <h1 class="text-3xl">Withdrow</h1>
+                    <p class="text-4xl font-semibold">$ <span id="currentWithdrowBalance">00</span></p>
+                </div>
+                <div class="bg-fuchsia-200 px-6 py-6 rounded-md">
+                    <h1 class="text-3xl">Balance</h1>
+                    <p class="text-4xl font-semibold">$ <span id="mainBalance">1240</span></p>
+                </div>
+            </div>
+        </section>
+
+        <!-- deposit and Withdrow area -->
+        <section>
+            <div class="grid grid-cols-2 gap-4 mt-12 w-9/12 mx-auto">
+                <div class="bg-green-200 px-6 py-8 rounded-md">
+                    <h1 class="font-bold text-slate-600">Please Deposit hear!</h1>
+                    <input id="DepositInput" class="block w-3/4 mt-2 mb-2 rounded-sm px-3"
+                        placeholder="Amount you want to deposit" type="text">
+                    <button id="DepositBtn"
+                        class="bg-orange-500 px-6 py-1 font-bold text-white rounded-sm hover:bg-green-400">Deposit</button>
+                </div>
+                <div class="bg-amber-200 px-6 py-8 rounded-md">
+                    <h1 class="font-bold text-slate-600">Please Withdrow hear!</h1>
+                    <input id="WithdrowInput" class="block w-3/4 mt-2 mb-2 rounded-sm px-3"
+                        placeholder="Amount you want to withdrow" type="text">
+                    <button id="WithdrowBtn"
+                        class="bg-orange-500 px-6 py-1 font-bold text-white rounded-sm hover:bg-green-400">Withdrow</button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <script src="bank.js"></script>
+</body>
+
+</html>
